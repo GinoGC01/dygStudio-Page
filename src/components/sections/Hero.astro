@@ -4,12 +4,71 @@
 
 <section>
   <main>
-    <figure></figure>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-      voluptatibus magnam at accusamus nulla explicabo dolore aliquam nostrum
-      quod qui quos enim velit ullam vitae corrupti consectetur non, labore
-      maiores?
-    </p>
+    <div>
+      <h1>Estudio Jurídico D&G</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+        voluptatibus magnam at accusamus nulla explicabo dolore aliquam nostrum
+        quod qui quos enim velit ullam vitae corrupti consectetur non, labore
+        maiores?
+      </p>
+    </div>
+    <div class="cta">
+      <a href="#" target="_blank" title="Agendar turno" class="button-cta-01">Agendar Turno</a>
+      <a href="#" target="_blank" title="Agendar turno" class="button-cta-02">Saber más</a>
+    </div>
+
   </main>
 </section>
+
+<style>
+  section{
+    height: 70vh;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    background-image: linear-gradient(180deg, rgba(61, 70, 85, 0.8) 0%, rgba(43, 49, 59, 0.8) 100%), url('../../../../images/estudio-image-example.webp');
+    background-size: cover;
+    height: 100%;
+    padding: 20px;
+  }
+
+  h1{
+    font-family: 'Times New Roman', Times, serif, system-ui, sans-serif;
+    color: var(--white);
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  p{
+    color: var(--white-07);
+  }
+
+  .cta{
+    display: flex;
+    gap: 1em;
+  }
+
+  a{
+    font-size: .9em;
+  }
+
+  .button-cta-01{
+    padding: 5px 10px;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: var(--blue);
+  }
+
+  .button-cta-02{
+    padding: 5px 10px;
+    color: var(--white);
+    border: 1px solid var(--white-07);
+  }
+
+</style>

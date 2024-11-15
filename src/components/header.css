@@ -5,15 +5,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: var(--theree-bg-general);
+  /*background-color: var(--theree-bg-general);*/
   width: 100%;
   height: 4em;
+  border-bottom: 1px solid white;
+  position: fixed;
+  transition: background .2s;
+}
+
+.scrolled{
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
 }
 
 .menu-hamburguesa {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.2em;
   cursor: pointer;
   width: 1.5em;
@@ -23,15 +31,19 @@
 .content2,
 .content3 {
   width: 1.3em;
-  height: 0.15em;
-  background-color: var(--second-bg-general);
+  height: 0.1em;
+  background-color: var(--white);
   /* menu hamb items color */
-  border-radius: 5px;
+  border-radius: 10px;
   transition: transform 0.2s;
 }
 
+.content2{
+  width: .8em;
+}
+
 .content1-on {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 5px);
 }
 
 .content2-on {
@@ -39,7 +51,7 @@
 }
 
 .content3-on {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(4px, -5px);
 }
 
 .nav-off,
@@ -53,8 +65,8 @@
 }
 
 .nav-off {
-  left: -15em;
-  background-color: var(--background-general);
+  left: -100em;
+  background-color: var(--orange);
   width: 60vw;
   transition: left 0.2s;
 }
@@ -90,6 +102,6 @@
 figure {
   width: 3em;
   height: 3em;
-  border: 1px solid var(--background-general);
+  border: 1px solid var(--orange);
   border-radius: 50%;
 }

@@ -1,15 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./header.css";
 
 export function Header() {
   const [navStatus, setNavStatus] = useState(false);
-
+  const [scrolled, setScrolled] = useState(false);
   const handlerStatusNav = () => {
     setNavStatus(!navStatus);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Cambia el estado si el scroll supera cierta cantidad de píxeles
+      setScrolled(window.scrollY > 50);
+    };
+
+    // Escucha el evento de scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpia el evento cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header-react">
+    <header className={scrolled ? "header-react scrolled" : "header-react"}>
       <figure>
         {/* <img src="" alt="" /> */}
         <span></span>

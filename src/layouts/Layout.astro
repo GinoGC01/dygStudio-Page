@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -22,19 +22,11 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-    --background-general: rgb(236, 153, 73);
-    --font-color-general: rgb(21, 18, 61);
-    --second-bg-general: rgb(242, 239, 234);
-    --theree-bg-general: rgb(114, 117, 122);
+    --orange: rgb(236, 153, 73);
+    --blue: rgb(21, 18, 61);
+    --white: rgb(242, 239, 234);
+    --white-07: rgb(242, 239, 234, .7);
+    --grey: rgb(114, 117, 122);
   }
   * {
     box-sizing: border-box;
@@ -45,7 +37,6 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    /* background: #13151a; */
   }
   code {
     font-family:
