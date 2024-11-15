@@ -43,9 +43,6 @@ export function Header() {
             <a href="#">areas laborales</a>
           </li>
           <li>
-            <a href="#">blog</a>
-          </li>
-          <li>
             <a href="#">contacto</a>
           </li>
         </ul>
